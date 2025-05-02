@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FourLeads - Werbeagentur</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FourLeads</h1>
+            <p>Ihre Werbeagentur für Handwerker und Dienstleister</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>Über uns</h2>
+            <p>FourLeads ist spezialisiert auf die Lead-Generierung für Handwerker und Dienstleister. Wir helfen Ihnen, mehr Kunden zu gewinnen und Ihr Geschäft auszubauen.</p>
+        </section>
+        <section id="services">
+            <h2>Unsere Leistungen</h2>
+            <ul>
+                <li>Social Media Marketing</li>
+                <li>Erstellung moderner Websites</li>
+                <li>Lokales SEO</li>
+                <li>Google Ads Kampagnen</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form action="contact-form-handler.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Senden</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 FourLeads. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
