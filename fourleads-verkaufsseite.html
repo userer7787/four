@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FourLeads - Werbeagentur</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero {
+            background: url('https://cdn.pixabay.com/photo/2017/02/15/10/39/team-2065108_1280.jpg') center/cover no-repeat;
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #services ul {
+            list-style: none;
+            padding: 0;
+        }
+        #services li {
+            margin: 1rem 0;
+            font-size: 1.1rem;
+        }
+        .testimonial {
+            background-color: #e2eafc;
+            padding: 2rem;
+            font-style: italic;
+            margin-top: 2rem;
+            border-left: 5px solid #0d6efd;
+        }
+        .highlight {
+            background-color: #fff3cd;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FourLeads</h1>
+            <p>Ihre Werbeagentur für Handwerker und Dienstleister</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Wecke Vertrauen. Gewinne Kunden.</h2>
+        <p>Wir machen Ihre Marke sichtbar – mit Strategie, Kreativität und Technologie, die Handwerkerherzen höher schlagen lassen.</p>
+    </section>
+
+    <main>
+        <section id="about">
+            <h2>Über uns</h2>
+            <p>FourLeads ist spezialisiert auf die Lead-Generierung für Handwerker und Dienstleister. Wir helfen Ihnen, mehr Kunden zu gewinnen und Ihr Geschäft auszubauen.</p>
+            <div class="testimonial">
+                "Seit wir mit FourLeads arbeiten, haben wir nicht nur mehr Anfragen, sondern auch endlich Kunden, die wirklich zu uns passen."
+                <br>– <strong>Markus H., Installateurmeister aus Graz</strong>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>Unsere Leistungen</h2>
+            <ul>
+                <li>⚡ Social Media Marketing – wir machen Ihre Marke zum Gesprächsthema</li>
+                <li>🖥 Moderne Websites – mobil-optimiert und überzeugend</li>
+                <li>📍 Lokales SEO – damit Sie dort gefunden werden, wo Sie gebraucht werden</li>
+                <li>🔍 Google Ads – mit messbarem ROI</li>
+            </ul>
+            <div class="highlight">
+                <p><strong>Wussten Sie?</strong> Über 70 % der Handwerkerkunden informieren sich online, bevor sie anrufen. Wir sorgen dafür, dass Sie dabei ganz oben stehen.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form action="contact-form-handler.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Senden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FourLeads. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>
